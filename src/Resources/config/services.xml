@@ -7,6 +7,16 @@
     <services>
         <service class="\kzorluoglu\ChameleonConsole\Command\ConsoleCommand" id="kzorluoglu.chameleon_console.console">
             <tag name="console.command"/>
+            <argument type="service" id="kzorluoglu.chameleon_console.drawer.static_logo_drawer"/>
+        </service>
+
+        <service class="\kzorluoglu\ChameleonConsole\Drawer\StaticLogoDrawer"
+                 id="kzorluoglu.chameleon_console.drawer.static_logo_drawer">
+            <argument type="service" id="kzorluoglu.chameleon_console.helper.chameleon_package_info_helper" />
+        </service>
+
+        <service class="\kzorluoglu\ChameleonConsole\Helper\ChameleonPackageInfoHelper"
+                 id="kzorluoglu.chameleon_console.helper.chameleon_package_info_helper">
         </service>
     </services>
 </container>

@@ -16,7 +16,8 @@
     },
     "require": {
         "php": ">=7.4",
-        "symfony/console": "4.4.*"
+        "symfony/console": "4.4.*",
+        "mindplay/composer-locator": "^2"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
