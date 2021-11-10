@@ -5,7 +5,7 @@
         https://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service class="\kzorluoglu\ChameleonConsole\Command\ConsoleCommand" id="kzorluoglu.chameleon_console.console">
+        <service class="\kzorluoglu\ChameleonConsole\Command\ConsoleCommand" id="kzorluoglu.chameleon_console.command.console_command">
             <tag name="console.command"/>
             <argument type="service" id="kzorluoglu.chameleon_console.drawer.static_logo_drawer"/>
         </service>

@@ -22,13 +22,13 @@ class ConsoleCommand extends Command
     public function __construct(LogoDrawerInterface $logoDrawer)
     {
         parent::__construct();
-
         $this->logoDrawer = $logoDrawer;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->write($this->logoDrawer->draw());
+
         return 0;
     }
 
